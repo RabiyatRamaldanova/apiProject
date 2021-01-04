@@ -1,5 +1,5 @@
 export const initialState = {
-    title: "shrek", 
+    title: "rabbit", 
     arrayOfData: [],
 };
 
@@ -9,11 +9,11 @@ function reducer1(state = initialState, action) {
             return{
                 title: action.payload
             };
-        case 'SET_ARRAY':
+        case 'GET_ARRAY':
             return{
                 ...state,
-                arrayOfData: action.payload.arrayOfData,
-            };
+                arrayOfData: action.payload
+            }
         default:
         return state;
     }

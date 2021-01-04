@@ -3,11 +3,11 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
     background: {
         flex: 1, 
-        backgroundColor: 'pink'
+        backgroundColor: '#7C71D8',
     },
     topView: {
         marginTop: 20,
-        backgroundColor:'pink'
+        backgroundColor:'#7C71D8'
     },
     inputText: {
         flex: 0.6, 
@@ -29,29 +29,34 @@ const styles = StyleSheet.create({
     },
     scroll: {
         flex: 10,
-        backgroundColor: 'pink'
+        backgroundColor: '#7C71D8',
     },
     image: {
         flex:1, 
-        width: 180, 
-        height: 200, 
+        width: 220, 
+        height: 220, 
         backgroundColor: 'white', 
         marginTop: 30, 
         justifyContent: 'center',  
         alignSelf: 'center'
     },
     text: {
-        flex: 0.2, 
+        //flex: 0.2, 
         fontSize: 20, 
         marginTop: 3,
-        width: 180
+        width: 220, 
+        alignSelf: 'center',
+        color: 'pink',
+        textAlign: 'center',
     },
     icon: {
         backgroundColor: '#ccc',
         position: 'absolute',
         right: 0,
         bottom: 0
-       }
+       },
+    mapView: { alignItems: 'center'},
+    touchable: {backgroundColor: '#382F85'}
 });
 
 export default styles;

@@ -1,6 +1,5 @@
 export const initialState = {
     arrayOfFavorite: [],
-    //isFavorite: false,
 };
 
 function reducer2(state = initialState, action) {
@@ -11,10 +10,10 @@ function reducer2(state = initialState, action) {
                 arrayOfFavorite: [...state.arrayOfFavorite, action.payload]
             }
 
-            // case 'SET_BOOLEAN':
-            //     return {
-            //         isFavorite: action.payload,
-            //     }
+            case 'REMOVE':
+                return {
+                    arrayOfFavorite: action.payload
+                }
         default:
         return state;
     }
